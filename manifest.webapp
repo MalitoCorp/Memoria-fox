@@ -1,7 +1,7 @@
 {
   "name": "Memoria FOX",
-  "description": "Entrena to memoria",
-  "launch_path": "index.html",
+  "description": "Entrena tu memoria",
+  "launch_path": "/index.html",
   "icons": {
     "128": "/img/icon.png"
   },
