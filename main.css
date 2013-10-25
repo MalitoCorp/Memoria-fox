@@ -3,7 +3,7 @@ body{
 }
 .cajas{
 	display: inline-block;
-	width: 25%;
+	width: 150px;
 	margin: 5px 3%;
 	padding: 0;
 	background: url("img/tapa.png");
@@ -20,4 +20,12 @@ img{
 	opacity:1;
 	transform: rotateY(360deg);
 	transition: all 0.8s linear;
+}
+
+@media (max-width:500px) { 
+
+	.cajas{
+		width: 25%;
+	}	
+
 }

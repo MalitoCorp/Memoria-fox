@@ -20,30 +20,35 @@
 
 	function getCarta(){
 		if (limpiar){
-					espera.classList.remove('hide');
-					stop.classList.remove('hide');
-					limpiar = false;
+			espera.classList.remove('hide');
+			stop.classList.remove('hide');
+			limpiar = false;
 		}
-		if(flag==0) {
-				flag = this.getAttribute("carta");
-				pos = this.getAttribute("pos");
-				this.classList.add('hide');
-				espera = this;
-		} else if(flag==this.getAttribute("carta") && pos != this.getAttribute("pos")) {
-				this.classList.add('hide');
-				espera.classList.add('hide');
-				flag = 0;
-				this.classList.add('hide');
-				parejas++;
-		} else{
-				stop = this;
-				this.classList.add('hide');
-				pos = this.getAttribute("pos");
-				flag = 0;
-				console.log("Segundo");
-				limpiar = true;
+
+		if( flag == 0 ){
+			flag = this.getAttribute("carta");
+			pos = this.getAttribute("pos");
+			this.classList.add('hide');
+			espera = this;
+		} 
+
+		else if( flag == this.getAttribute("carta") && pos != this.getAttribute("pos") ){
+			this.classList.add('hide');
+			//espera.classList.add('hide');
+			flag = 0;
+			parejas++;
+		} 
+
+		else{
+			stop = this;
+			this.classList.add('hide');
+			pos = this.getAttribute("pos");
+			flag = 0;
+			console.log("Segundo");
+			limpiar = true;
 		}
-		if (parejas==6) {
+
+		if ( parejas == 6 ) {
 			alert("Has ganado");
 			location.reload();
 		};
