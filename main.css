@@ -1,0 +1,25 @@
+body{
+	background: url('img/wallpaper.jpg');
+}
+.cajas{
+	display: inline-block;
+	width: 29%;
+	margin: 15px 1.5%;
+	padding: 0;
+	background: url("img/tapa.jpg");
+}
+img{
+  transition: all 0.8s linear;
+  backface-visibility: hidden;
+  width: 100%;
+  opacity:0;
+}
+img.giro{
+}
+
+
+.hide{
+	opacity:1;
+	transform: rotateY(360deg);
+	transition: all 0.8s linear;
+}

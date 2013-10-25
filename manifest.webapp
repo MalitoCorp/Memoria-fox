@@ -1,0 +1,16 @@
+{
+  "name": "Memoria FOX",
+  "description": "Entrena to memoria",
+  "launch_path": "index.html",
+  "icons": {
+    "128": "/img/icon.png"
+  },
+  "orientation": [
+    "portrait"
+  ],
+  "developer": {
+    "name": "Mentes del Dr. Malito",
+    "url": "http://github.com/MalitoCorp"
+  },
+  "default_locale": "es"
+}
