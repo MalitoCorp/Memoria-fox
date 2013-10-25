@@ -49,7 +49,7 @@
 		}
 
 		if ( parejas == 6 ) {
-			alert("Has ganado");
+			alert("¡Felicidades ganaste!");
 			location.reload();
 		};
 	}
