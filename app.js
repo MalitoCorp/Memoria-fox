@@ -1,7 +1,7 @@
 (function(){
 	
 	var
-		flag = 0, espera, pos, limpiar, stop, parejas=0,
+		flag = 0, Carta1, pos, limpiar, Carta2, parejas=0,
 		talbero = document.getElementsByClassName("cajas"),
 		lista = [1,2,3,4,5,6,1,2,3,4,5,6];
 
@@ -20,8 +20,8 @@
 
 	function getCarta(){
 		if (limpiar){
-			espera.classList.remove('hide');
-			stop.classList.remove('hide');
+			Carta1.classList.remove('hide');
+			Carta2.classList.remove('hide');
 			limpiar = false;
 		}
 
@@ -29,22 +29,20 @@
 			flag = this.getAttribute("carta");
 			pos = this.getAttribute("pos");
 			this.classList.add('hide');
-			espera = this;
+			Carta1 = this;
 		} 
 
 		else if( flag == this.getAttribute("carta") && pos != this.getAttribute("pos") ){
 			this.classList.add('hide');
-			//espera.classList.add('hide');
 			flag = 0;
 			parejas++;
 		} 
 
 		else{
-			stop = this;
+			Carta2 = this;
 			this.classList.add('hide');
-			pos = this.getAttribute("pos");
+			//pos = this.getAttribute("pos");
 			flag = 0;
-			console.log("Segundo");
 			limpiar = true;
 		}
 
