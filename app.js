@@ -10,7 +10,7 @@
 	
 	lista.forEach(function (val, index, theArray) {
 	  var image = document.createElement("img");
-		image.setAttribute('src', 'img/'+ val + '.jpg');
+		image.setAttribute('src', 'img/'+ val + '.png');
 		image.setAttribute('carta', val);
 		image.setAttribute('pos', index);
 		talbero[index].appendChild(image);

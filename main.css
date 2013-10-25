@@ -3,10 +3,11 @@ body{
 }
 .cajas{
 	display: inline-block;
-	width: 29%;
-	margin: 15px 1.5%;
+	width: 25%;
+	margin: 5px 3%;
 	padding: 0;
-	background: url("img/tapa.jpg");
+	background: url("img/tapa.png");
+	background-size: 100%; 
 }
 img{
   transition: all 0.8s linear;
@@ -14,9 +15,6 @@ img{
   width: 100%;
   opacity:0;
 }
-img.giro{
-}
-
 
 .hide{
 	opacity:1;
