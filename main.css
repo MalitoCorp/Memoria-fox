@@ -1,7 +1,8 @@
 body{
 	background: url('img/wallpaper.jpg');
 }
-.cajas{
+
+#tablero > div{
 	display: inline-block;
 	width: 150px;
 	margin: 5px 3%;
@@ -9,6 +10,7 @@ body{
 	background: url("img/tapa.png");
 	background-size: 100%; 
 }
+
 img{
   transition: all 0.8s linear;
   backface-visibility: hidden;
@@ -16,16 +18,9 @@ img{
   opacity:0;
 }
 
-.hide{
+.show{
 	opacity:1;
 	transform: rotateY(360deg);
 	transition: all 0.8s linear;
 }
 
-@media (max-width:500px) { 
-
-	.cajas{
-		width: 25%;
-	}	
-
-}
