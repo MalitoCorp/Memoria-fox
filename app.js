@@ -5,7 +5,7 @@
     var pos;
     var limpiar;
     var talbero = document.getElementById("tablero");
-    var	lista = [1, 2, 3, 4];
+    var	lista = [1, 2, 3, 4, 5, 6];
     var parejas = lista.length;
 
     // Duplico y revuelvo la lista para preparar el juego.
@@ -68,11 +68,14 @@
 			limpiar = true;
 		}
 
-        // Si el finarizar la juganda se completa 
+        // Si al finalizar la jugada se completan
         // todas las parejas se gana el juego.
+        // Se lanza una ventana de alerta y
+        // Tras ella se recarga la pagina.
 		if ( parejas == 0 ) {
 			alert("¡Felicidades ganaste!");
 			location.reload();
 		};
 	}
+    
 })(document);
