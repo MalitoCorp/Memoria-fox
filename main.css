@@ -25,10 +25,7 @@ img{
     backface-visibility: hidden;
     width: auto;
     max-height: calc(25vh - 10px);
-
-/*    height: 100%;*/
     opacity:0;
-/*    max-height: calc(25vh - 12px);*/
 }
 
 .show{
