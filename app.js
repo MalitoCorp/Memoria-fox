@@ -31,9 +31,13 @@
         image.addEventListener("click", getCarta , false);
 	});
 
-	function getCarta (element){
+	// getCarta: Se ejecuta una vez por cada movimiento
+	// del jugador, evaluendo si el tiro el valido o no.
+	// params:
+	// 	event: objeto evento
+	function getCarta (event) {
             
-        var self = element.target;
+        var self = event.target;
         
         // Si las cartas no coinciden se ocultan de nuevo.
 		if (limpiar){
